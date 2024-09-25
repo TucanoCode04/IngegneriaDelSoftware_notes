@@ -101,6 +101,8 @@
 23. Cos'è il polimorfismo ad hoc? [x] (non mi ricordavo cosa fosse)
 24. Cos'è il polimorfismo ereditario? [x] (non mi ricordavo cosa fosse)
 25. Cos'è il polimorfismo generico? [x] (non mi ricordavo cosa fosse)
+26. Cos'è una funzione virtuale?
+27. Cos'è una funzione astraatta?
 
 #### Extra
 1. Qual è la suddistinzione?
@@ -114,7 +116,7 @@
     - Singleton: si ha un costruttore privato e un metodo statico per ottenere l'istanza
 - strutturali(ossia quelli che si occupano della composizione di classi e oggetti):
     - Adapter: devi passare dal target all'adaptee, implementi il target faendo l'adaptor
-    - Bridge: c'è un interfaccia che è un colore e una classe astratta che è la forma. La forma ha come argomento il colore
+    - Bridge: implementor e abstraction, implementor ha un metodo implementoperation e abstraction ha un metodo operation
     - Composite: linea e cerchio implementano graphic e il compsite implementa graphic che drawa tutto
     - Decorator: implementare un interfaccia shape, una classe astratta decorator che implementa shape e un red decorator
     - Facade: ci sono die subsystem e una facade che li chiama
