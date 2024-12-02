@@ -102,7 +102,7 @@
 24. Cos'è il polimorfismo ereditario? [x] (non mi ricordavo cosa fosse)
 25. Cos'è il polimorfismo generico? [x] (non mi ricordavo cosa fosse)
 26. Cos'è una funzione virtuale?
-27. Cos'è una funzione astraatta?
+27. Cos'è una funzione astratta?
 
 #### Extra
 1. Qual è la suddistinzione?

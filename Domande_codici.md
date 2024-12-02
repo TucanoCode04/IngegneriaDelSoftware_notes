@@ -393,6 +393,37 @@ public class AdapterPattern {
     }
 }
 ```
+```java
+interface Target {
+    void request();
+}
+
+class Adaptee {
+    public void specificRequest() {
+        System.out.println("Specific request");
+    }
+}
+
+class Adapter implements Target {
+    private Adaptee adaptee;
+
+    public Adapter(Adaptee adaptee) {
+        this.adaptee = adaptee;
+    }
+
+    public void request() {
+        adaptee.specificRequest();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Adaptee adaptee = new Adaptee();
+        Target target = new Adapter(adaptee);
+        target.request();
+    }
+}
+```
 
 In questo esempio, l'Adapter Pattern viene utilizzato per adattare le interfacce di `VlcPlayer` e `Mp4Player` all'interfaccia `MediaPlayer` utilizzata da `AudioPlayer`. L'`AudioPlayer` può riprodurre file mp3 direttamente e utilizza l'`MediaAdapter` per riprodurre file vlc e mp4.
 
